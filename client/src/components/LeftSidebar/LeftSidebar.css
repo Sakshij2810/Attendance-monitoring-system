@@ -1,0 +1,15 @@
+.leftsidebar-container {
+  width: 100%;
+  height: 100vh;
+}
+.link-div {
+  margin-top: 300px;
+  border: 1px solid white;
+}
+.left-links {
+  color: black;
+  background-color: white;
+  padding: 60px 50px;
+  border-radius: 50%;
+  text-decoration: none;
+}
