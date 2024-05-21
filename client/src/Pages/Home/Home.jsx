@@ -5,7 +5,7 @@ import React from "react";
 const Home = () => {
   return (
     <div className="home-page">
-      <h1>Welcome to Student Attendence</h1>
+      <h1>Welcome to Attendence Monitoring</h1>
       <p>Please Login or Sigup to access this portal...</p>
       <div className="auth-button">
         <Link className="auth-links" to="/Login">

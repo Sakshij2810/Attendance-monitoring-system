@@ -16,7 +16,7 @@
 .para {
   background-color: white;
   position: absolute;
-  top: 240px;
+  top: 215px;
 
   left: 170px;
 }
@@ -48,6 +48,7 @@
   transition: 0.2s;
   font-size: 13px;
   font-weight: bolder;
+  border-radius: 6px;
 }
 .login-container-2 {
   /* background-color: blue; */
