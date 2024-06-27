@@ -5,7 +5,13 @@ const UserSchema = mongoose.Schema({
   email: { type: String, required: true },
   password: { type: String, required: true },
   role: { type: String, required: true },
-  about: { type: String },
+  year: { type: String },
+  batch: { type: String },
+  contactNo: { type: String },
+  department: { type: String },
+  subject: { type: String },
+  subjectCode: { type: String },
+
   joinedOn: { type: Date, default: Date.now },
 });
 

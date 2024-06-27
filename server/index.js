@@ -4,10 +4,13 @@ import mongoose from "mongoose";
 
 //import routes
 import userRoutes from "./routes/users.js";
+import teacherRoutes from "./routes/teachers.js";
+import studentRoutes from "./routes/students.js";
+import attendanceRoutes from "./routes/attendance.js";
 
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 app.use(urlencoded({ extended: true, limit: "30mb" }));
 app.use(express.json({ extended: true, limit: "30mb" }));
@@ -15,6 +18,9 @@ app.use(cors());
 
 //routes middleware
 app.use("/user", userRoutes);
+app.use("/teacher", teacherRoutes);
+app.use("/student", studentRoutes);
+app.use("/attendance", attendanceRoutes);
 
 app.get("/", (req, res) => {
   res.send(`This is a Attendance Monitoring System API`);

@@ -8,10 +8,26 @@
 }
 .name-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.leftsidebar-user-data {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.leftsidebar-user-data p {
+  color: rgb(99, 24, 99);
+
+  font-weight: 800;
+  padding: 0%;
+  margin: 0%;
 }
 .left-links {
   background: url("../../assets/profile.webp");

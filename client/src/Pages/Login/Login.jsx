@@ -15,10 +15,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!password && !email && !role) {
-      alert("Please Enter Name and Password to continue!");
+    if (!email && !password && !role) {
+      alert("Please Enter Email, Password and Role to continue!");
     } else {
-      dispatch(login({ email, password, role }, navigate));
+      const existingUserData = JSON.parse(localStorage.getItem("Profile"));
+      dispatch(login({ email, password, role, ...existingUserData }, navigate));
     }
   };
 
